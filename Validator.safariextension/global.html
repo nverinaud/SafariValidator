@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validator</title>
+	
+	<script type="text/javascript">
+	
+	function performCommand(event){
+		if(event.command === "toggleBar"){
+			for (var i = 0; i < safari.extension.bars.length; ++i) {
+				var bar = safari.extension.bars[i];
+				if (bar.browserWindow === safari.application.activeBrowserWindow && bar.identifier === "validator-toolbar") {
+					if (bar.visible)
+						bar.hide();
+					else
+						bar.show();
+				}
+			}
+		}
+	}
+	
+	safari.application.addEventListener("command", performCommand, false);
+	</script>
+    
+</head>
+<body>	
+</body>
+</html>

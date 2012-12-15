@@ -1,0 +1,77 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		0311927B11F7800E002022D6 /* validator-bar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "validator-bar.html"; sourceTree = "<group>"; };
+		0311927C11F7800E002022D6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0311927D11F7800E002022D6 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		031192A011F788BC002022D6 /* validator.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = validator.js; sourceTree = "<group>"; };
+		03538A6E11F8364C0076636D /* global.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = global.html; sourceTree = "<group>"; };
+		03538B0211F8710F0076636D /* Update.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Update.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0311927011F77FFB002022D6 = {
+			isa = PBXGroup;
+			children = (
+				0311927B11F7800E002022D6 /* validator-bar.html */,
+				0311927D11F7800E002022D6 /* Settings.plist */,
+				0311927C11F7800E002022D6 /* Info.plist */,
+				031192A011F788BC002022D6 /* validator.js */,
+				03538A6E11F8364C0076636D /* global.html */,
+				03538B0211F8710F0076636D /* Update.plist */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		0311927211F77FFB002022D6 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0311927511F77FFB002022D6 /* Build configuration list for PBXProject "Validator" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 0311927011F77FFB002022D6;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		0311927311F77FFB002022D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		0311927411F77FFB002022D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0311927511F77FFB002022D6 /* Build configuration list for PBXProject "Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0311927311F77FFB002022D6 /* Debug */,
+				0311927411F77FFB002022D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0311927211F77FFB002022D6 /* Project object */;
+}

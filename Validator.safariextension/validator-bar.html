@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validator</title>
+	
+	<script type="text/javascript">	
+	// Global
+	function $(id) { return document.getElementById(id); }
+	
+	function openInTab(url){
+		var tab = safari.self.browserWindow.openTab();
+		tab.url = url;
+	}
+	
+	// Validation
+    function validateHtml() {
+		var data = $("doctype").value;
+		
+		safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("validateHtml", data);
+    }
+	
+	function validateCss() {
+		var data = new Array();
+		data[0] = $("profile").value;
+		data[1] = $("media").value;
+		
+        safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("validateCss", data);
+    }
+	
+	// Injected Scripts Communication
+	function respondToMessage(msgEvent) {
+        if(msgEvent.name === "openUrl"){
+			var newTab = safari.self.browserWindow.openTab();
+			newTab.url = msgEvent.message;
+		}
+    }
+	
+	// Context Menu Event Handling
+	function respondToCommand(event) {
+		if (event.command === "context-validateHtml")
+			validateHtml();
+		
+		if (event.command === "context-validateCss")
+			validateCss();
+	}
+	
+	// Listeners
+    safari.self.browserWindow.addEventListener("message", respondToMessage, false);
+	safari.self.browserWindow.addEventListener("command", respondToCommand, false);
+ 
+	</script>
+	
+	<style>
+	
+	body{
+		margin: 0;
+		white-space: normal;
+		width: 100%;
+	}
+	
+	div{
+		display: inline;
+	}
+	
+	#html{
+		border-right: 1px solid #000;
+		margin-right: 7px;
+	}
+	/*
+	#css{
+		border-right: 1px solid #000;
+		margin-right: 7px;
+		padding-right: 2px;
+	}
+	*/
+	
+	.type{
+		font-weight: bold;
+		font-size: 1.1em;
+		color: #fff;
+		text-shadow: #555 1px 1px 1px;
+		margin-right: 2px;
+	}
+	
+	div a{
+		font-size: 0.9em;
+		text-decoration: none;
+		padding: 1px 5px 2px;
+		color: #000;
+		background-color: #ccc;
+		-webkit-border-radius: 12px;
+		border: 1px solid #000;
+		margin-right: 3px;
+	}
+	
+	div a:hover{
+		color: #fff;
+		background-color: #848484;
+		-webkit-border-radius: 12px;
+		text-shadow: #555 1px 1px 1px;
+		padding: 1px 5px 2px;
+	}
+	
+	#w3clogo{
+		display: block;
+		width: 29px;
+		height: 19px;
+		background: url("w3c.png") no-repeat;
+		float: right;
+		margin-left: 2px;
+	}
+	
+	#validatorLogo{
+		display: block;
+		float: left;
+		width: 24px;
+		height: 24px;
+		background: url("Icon-20.png") no-repeat;
+		margin-right: 2px;
+	}
+	
+	.poweredBy{
+		font-size: 0.7em;
+		float: right;
+		text-align: right;
+		color: #fff;
+		text-shadow: #555 1px 1px 1px;
+	}
+	
+	</style>
+    
+</head>
+<body>
+
+	<div id="validatorLogo"></div>
+	
+	<div id="html">
+		<span class="type">HTML</span>
+		Doctype
+		<select id="doctype" name="doctype">
+		  <option value="Inline" selected="selected">(automatique)</option>
+		  <option value="HTML5">HTML5 (experimental)</option>
+		  <option value="XHTML 1.0 Strict">XHTML 1.0 Strict</option>
+		  <option value="XHTML 1.0 Transitional">XHTML 1.0 Transitional</option>
+		  <option value="XHTML 1.0 Frameset">XHTML 1.0 Frameset</option>
+		  <option value="HTML 4.01 Strict">HTML 4.01 Strict</option>
+		  <option value="HTML 4.01 Transitional">HTML 4.01 Transitional</option>
+		  <option value="HTML 4.01 Frameset">HTML 4.01 Frameset</option>
+		  <option value="HTML 3.2">HTML 3.2</option>
+		  <option value="HTML 2.0">HTML 2.0</option>
+		  <option value="ISO/IEC 15445:2000 (&quot;ISO HTML&quot;)">ISO/IEC 15445:2000 ("ISO HTML")</option>
+		  <option value="XHTML 1.1">XHTML 1.1</option>
+		  <option value="XHTML + RDFa">XHTML + RDFa</option>
+		  <option value="XHTML Basic 1.0">XHTML Basic 1.0</option>
+		  <option value="XHTML Basic 1.1">XHTML Basic 1.1</option>
+		  <option value="XHTML Mobile Profile 1.2">XHTML Mobile Profile 1.2</option>
+		  <option value="XHTML-Print 1.0">XHTML-Print 1.0</option>
+		  <option value="XHTML 1.1 plus MathML 2.0">XHTML 1.1 plus MathML 2.0</option> 
+		  <option value="XHTML 1.1 plus MathML 2.0 plus SVG 1.1">XHTML 1.1 plus MathML 2.0 plus SVG 1.1</option> 
+		  <option value="MathML 2.0">MathML 2.0</option>
+		  <option value="SVG 1.0">SVG 1.0</option>
+		  <option value="SVG 1.1">SVG 1.1</option>
+		  <option value="SVG 1.1 Tiny">SVG 1.1 Tiny</option>
+		  <option value="SVG 1.1 Basic">SVG 1.1 Basic</option>
+		  <option value="SMIL 1.0">SMIL 1.0</option>
+		  <option value="SMIL 2.0">SMIL 2.0</option>
+		</select>
+		
+		<a href="javascript:validateHtml();">Validate</a>
+	</div>
+	
+	<div id="css">
+		<span class="type">CSS</span>
+		Profile
+		<select id="profile" name="profile">
+			<option value="none">Aucun profil particulier</option>
+			<option value="css1">CSS niveau 1</option>
+			<option value="css2">CSS niveau 2</option>
+			<option selected="selected" value="css21">CSS niveau 2.1</option>
+			<option value="css3">CSS niveau 3</option>
+			<option value="svg">SVG</option>
+			<option value="svgbasic">SVG Basic</option>
+			<option value="svgtiny">SVG tiny</option>  
+			<option value="mobile">Mobile</option>
+			<option value="atsc-tv">Profil ATSC TV</option>
+			<option value="tv">Profil TV</option>
+		</select>
+		
+		Medium
+		<select id="media" name="usermedium">
+			<option selected="selected" value="all">Tous</option>
+			<option value="aural">aural</option>
+			<option value="braille">braille</option>
+			<option value="embossed">embossed</option>
+			<option value="handheld">handheld</option>
+			<option value="print">print</option>
+			<option value="projection">projection</option>
+			<option value="screen">screen</option>
+			<option value="tty">TTY</option>
+			<option value="tv">TV</option>
+			<option value="presentation">presentation</option>
+		</select>
+		
+		<a href="javascript:validateCss();">Validate</a>
+	</div>
+	
+	<!--
+	<div id="local">
+		<span class="type">Local</span>
+		<input type="checkbox" name="local" value="local" />
+	</div>
+	-->
+	
+	<a href="javascript:openInTab('http://www.w3.org');" id="w3clogo"></a>
+	<span class="poweredBy">Validated<br/> by&nbsp;</span>
+	
+</body>
+</html>

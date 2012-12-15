@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Nicolas Verinaud</string>
+	<key>CFBundleDisplayName</key>
+	<string>Validator</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.nverinaud.validator</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Bars</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>validator-bar.html</string>
+				<key>Identifier</key>
+				<string>validator-toolbar</string>
+				<key>Label</key>
+				<string>Validator</string>
+			</dict>
+		</array>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>context-validateHtml</string>
+				<key>Title</key>
+				<string>Valider le code HTML</string>
+			</dict>
+			<dict>
+				<key>Identifier</key>
+				<string>context-validateCss</string>
+				<key>Title</key>
+				<string>Valider le code CSS</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>global.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>toggleBar</string>
+				<key>Identifier</key>
+				<string>validator-toolbar</string>
+				<key>Image</key>
+				<string>toolbar_icon.png</string>
+				<key>Label</key>
+				<string>Validator</string>
+				<key>Palette Label</key>
+				<string></string>
+				<key>Tool Tip</key>
+				<string>Show the Validator Toolbar</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>validator.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>HTML &amp; CSS W3C Validator</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://www.nverinaud.com/resources/safari/Update.plist</string>
+	<key>Website</key>
+	<string>http://www.nverinaud.com</string>
+</dict>
+</plist>

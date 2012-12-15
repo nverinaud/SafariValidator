@@ -1,0 +1,184 @@
+// !$*UTF8*$!
+{
+	0311927211F77FFB002022D6 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		addToTargets = (
+		);
+		codeSenseManager = 0311927711F77FFB002022D6 /* Code sense */;
+		ignoreBreakpointsInProjectsDict = {
+		};
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = 1;
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					990,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					950,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 301495673;
+			PBXWorkspaceStateSaveDate = 301495673;
+		};
+		perUserProjectItems = {
+			03F50E3511F885AB00BF80A8 /* PlistBookmark */ = 03F50E3511F885AB00BF80A8 /* PlistBookmark */;
+			03F50E3611F885AB00BF80A8 /* PlistBookmark */ = 03F50E3611F885AB00BF80A8 /* PlistBookmark */;
+			03F50E3711F885AB00BF80A8 /* PBXTextBookmark */ = 03F50E3711F885AB00BF80A8 /* PBXTextBookmark */;
+			03F50E3811F885AB00BF80A8 /* PBXTextBookmark */ = 03F50E3811F885AB00BF80A8 /* PBXTextBookmark */;
+			03F50E3911F885AB00BF80A8 /* PBXTextBookmark */ = 03F50E3911F885AB00BF80A8 /* PBXTextBookmark */;
+			03F50E3A11F885AB00BF80A8 /* PlistBookmark */ = 03F50E3A11F885AB00BF80A8 /* PlistBookmark */;
+			03F50E3B11F885AB00BF80A8 /* PlistBookmark */ = 03F50E3B11F885AB00BF80A8 /* PlistBookmark */;
+		};
+		sourceControlManager = 0311927611F77FFB002022D6 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	0311927611F77FFB002022D6 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	0311927711F77FFB002022D6 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	0311927B11F7800E002022D6 /* validator-bar.html */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1168, 3250}}";
+			sepNavSelRange = "{1544, 0}";
+			sepNavVisRange = "{1092, 672}";
+			sepNavWindowFrame = "{{15, 156}, {980, 717}}";
+		};
+	};
+	031192A011F788BC002022D6 /* validator.js */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1168, 555}}";
+			sepNavSelRange = "{642, 0}";
+			sepNavVisRange = "{0, 946}";
+		};
+	};
+	03538A6E11F8364C0076636D /* global.html */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1168, 555}}";
+			sepNavSelRange = "{265, 0}";
+			sepNavVisRange = "{0, 587}";
+		};
+	};
+	03F50E3511F885AB00BF80A8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 0311927D11F7800E002022D6 /* Settings.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/nico/Development/Safari/Validator.safariextension/Settings.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	03F50E3611F885AB00BF80A8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 0311927C11F7800E002022D6 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/nico/Development/Safari/Validator.safariextension/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	03F50E3711F885AB00BF80A8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 031192A011F788BC002022D6 /* validator.js */;
+		name = "validator.js: 25";
+		rLen = 0;
+		rLoc = 642;
+		rType = 0;
+		vrLen = 946;
+		vrLoc = 0;
+	};
+	03F50E3811F885AB00BF80A8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 03538A6E11F8364C0076636D /* global.html */;
+		name = "global.html: 11";
+		rLen = 0;
+		rLoc = 265;
+		rType = 0;
+		vrLen = 587;
+		vrLoc = 0;
+	};
+	03F50E3911F885AB00BF80A8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0311927B11F7800E002022D6 /* validator-bar.html */;
+		name = "validator-bar.html: 75";
+		rLen = 0;
+		rLoc = 1544;
+		rType = 0;
+		vrLen = 672;
+		vrLoc = 1092;
+	};
+	03F50E3A11F885AB00BF80A8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 03538B0211F8710F0076636D /* Update.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/nico/Development/Safari/Validator.safariextension/Update.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	03F50E3B11F885AB00BF80A8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 03538B0211F8710F0076636D /* Update.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			"Extension Updates",
+			0,
+			URL,
+		);
+		name = /Users/nico/Development/Safari/Validator.safariextension/Update.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+}
